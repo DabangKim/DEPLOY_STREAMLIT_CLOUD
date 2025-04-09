@@ -1,0 +1,16 @@
+langchain
+langchain-ollama
+langchain-community
+langchain-text-splitters
+langchain_experimental
+langchain-huggingface
+langchain-chroma
+
+pypdf
+rapidocr-onnxruntime
+unstructured
+"unstructured[pdf]"
+sentence-transformers
+
+streamlit
+pysqlite3-binary
