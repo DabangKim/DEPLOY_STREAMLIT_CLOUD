@@ -61,7 +61,7 @@ def get_vectorstore(_docs):
 # 2. RAG 체인 구성
 @st.cache_resource
 def initialize_components():
-    file_path = "data/대한민국헌법(헌법)(제00010호)(19880225).pdf"
+    file_path = "data/law.pdf"
     pages = load_pdf(file_path)
     vectorstore = get_vectorstore(pages)
     llm = ChatOllama(
