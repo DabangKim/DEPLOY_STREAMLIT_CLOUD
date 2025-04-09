@@ -1,3 +1,8 @@
+# sqlite3 의존성 문제 해결 -> pysqlite3로 대체
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # 0. 필수 라이브러리 호출
 import os
 import streamlit as st
@@ -13,11 +18,6 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories.streamlit import StreamlitChatMessageHistory
-
-# 0-1 sqlite3 의존성 문제 해결 -> pysqlite3로 대체
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 
 
