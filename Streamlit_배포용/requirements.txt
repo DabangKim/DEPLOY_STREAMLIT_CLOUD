@@ -9,7 +9,6 @@ langchain-chroma
 pypdf
 rapidocr-onnxruntime
 unstructured
-"unstructured[pdf]"
 sentence-transformers
 
 streamlit
